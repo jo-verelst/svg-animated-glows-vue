@@ -1,0 +1,50 @@
+*, .indoor {
+  $start-color: #4AFFE5;
+  $stop-color: #5C00FD;
+  .glow-1 {
+    @include generate-glow($start-color, $stop-color, 52%, 8%, 800px);
+  }
+  .glow-2 {
+    @include generate-glow($start-color, $stop-color, 2%, 67%, 700px);
+  }
+  .glow-3 {
+    @include generate-glow($start-color, $stop-color, 108%, 93%, 700px);
+  }
+}
+.outdoor {
+  $start-color: #FFFFFF;
+  $stop-color: rgb(255, 208, 0);
+  .glow-1 {
+    @include generate-glow($start-color, $stop-color, 0%, 20%, 900px, 900px, 0.4);
+  }
+  .glow-2 {
+    @include generate-glow($start-color, $stop-color, 100%, 55%, 500px, 500px, 0.5);
+  }
+  .glow-3 {
+    @include generate-glow($start-color, $stop-color, 50%, 98%, 700px, 700px, 0.6);
+  }
+}
+.living-room {
+  $start-color: #9C64FE;
+  $stop-color: #FF5D60;
+  .glow-1 {
+    @include generate-glow($start-color, $stop-color, -30%, 30%, 600px);
+  }
+  .glow-2 {
+    @include generate-glow($start-color, $stop-color, 110%, 55%, 700px);
+  }
+  .glow-3 {
+    @include generate-glow($start-color, $stop-color, -10%, 95%, 500px);
+  }
+}
+.lightbulbs {
+  .glow-1 {
+    @include generate-glow(#5C00FD, rgb(0, 217, 255), 50%, 13%, 600px);
+  }
+  .glow-2 {
+    @include generate-glow(#4AFFE5, rgb(228, 253, 0), 100%, 50%, 600px, 600px, 0.7);
+  }
+  .glow-3 {
+    @include generate-glow(#9C64FE, #FF5D60, 40%, 90%, 800px, 800px, 0.5);
+  }
+}
